@@ -1,0 +1,146 @@
+#menu {
+  width: 920px;
+  height: 70px;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  background-color: #558C89;
+  border-radius: 10px;
+  border-style: solid;
+  border-color:#000000;
+  text-align:center;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+
+
+#menu ul {
+  height: auto;
+  padding: 20px 8px 8px 8px;
+  margin: 2px;
+}
+#menu li {
+  display: inline;
+  padding: 25px;
+}
+
+
+#icons {
+ width: 600px;
+  height: 70px;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  background-color: #558C89;
+  border-radius: 10px;
+  border-style: solid;
+  border-color:#000000;
+  text-align:center;
+  position: absolute;
+  bottom: 8%;
+  left:28%;
+}
+
+
+#icons ul {
+  height: auto;
+  padding: 12px 8px 8px 8px;
+  margin: 2px;
+}
+#icons li {
+  display: inline;
+  padding: 25px;
+}
+
+a {
+    color: #558C89;
+    text-decoration:none;
+}
+
+a:hover
+{
+     color:#74AFAD;
+     text-decoration:none;
+     cursor:pointer;
+     }
+
+#Heading{
+	margin-top:175px;
+   margin-bottom:5px;
+	font-family:Palatino Linotype;
+	font-size:50px;
+	text-align:center;
+	color:#558C89;
+
+}
+
+#Date{
+	font-family:Palatino Linotype;
+	font-size:25px;
+	font-style:italic;
+	text-align:center;
+	color:#000000;
+
+}
+
+#HeadingIndexPage{
+	margin-top:300px;
+   margin-bottom:5px;
+	font-family:Palatino Linotype;
+	font-size:50px;
+	text-align:center;
+	color:#558C89;
+
+}
+
+p {
+	font-family:Trebuchet MS;
+	font-size:20px;
+	text-align:center;
+	}
+
+body {
+    background-image: url('Logo.png');
+    background-repeat: no-repeat;
+    background-attachment: static;
+    }
+
+.line_break{
+  height:4px;
+  width:100%;
+  background-color:#74AFAD;
+  top:20%;
+  position:absolute;
+}
+
+#blogs{
+	padding-right:50px;
+	padding-left:50px;
+	border-style: solid;
+  border-color:#000000;
+  position: relative;
+  width:70%;
+  right:15%;
+  left:11%;
+  top: 32%;
+  font-size: 35px;
+  text-align: center;
+list-style-position:inside;
+  background-color:#ECECEA;
+  font-family:Palatino Linotype;
+  }
+
+  #blogs ol{
+  text-align:center;
+  }
+
+A.menubar {color:#FFFFFF;
+}
+A.menubar:hover {color: #74AFAD;
+}
+
+.date{
+font-size:16px
+}
+
