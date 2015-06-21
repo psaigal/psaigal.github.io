@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<head>
-  <title>Priyanka's DBC Blog</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
-</head>
+<html>
+  <head>
+   <title>Priyanka's Website</title>
+    <link href="default.css" rel="stylesheet" type="text/css">
+  </head>
 
-<main>
-   <h1>Technical Blog</h1>
-  <h2>Phase 0-Week 1</h2>
-  <h4>June 13, 2015</h4>
+  <body>
 
-  <section>
-    <p>Version control is a system that allows a team to track, modify, and share different versions of a project. Individuals can make changes to their work that will be monitored. These changes are then submitted and recorded. Team members can constantly obtain the newest revision by requesting a pull. Different members of a team can make revisions to the same project at the same time without affecting each other. When the revisions are completed, they can merge their changes back to the central project. Git is a distrubuted version control system. This means every team member has their own repository which they can change without connecting to the server every time. All revisions can be pushed into the main repository.
-    </p>
-
-    <p>Git has a sophisticated system of keeping track of changes. The "git status" command will allow you to obtain information about the current state of your files. It will designate files as untracked if they were not present in the last commit. The "git add" command will track a file, and it will be staged to be committed. If you make changes to a file that was tracked at one point, then git will send out a message saying the file has been tracked but it is not staged to be committed. Again, the "git add" command will allow it to be staged. You can commit the files using the "git commit" command. Every file that has been committed or is staged to be committed will have a unique SHA-1 hash, which is essentially a 40 hex character "stamp". This allows Git to keep track of all the changes that have ever been made to a specific file.
-</p>
-
-    <p>GitHub has a number of unique features. The social network aspect of the website allows users to follow one another and learn more about other user's contributions. The GitHub fork, pull request, and merge features allow users to easily and efficiently make changes to different open-source projects. This free platform makes it easy for novice programmers to learn and grow. In addition, users can easily store all of their code in one location.
-    </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
+ <section id="menu">
+  <ul>
+    <li><a href="index.html" class="menubar">Home</a></li>
+    <li><a href="blogposts.html" class="menubar">Blog Posts</a></li>
+    <li><a href="projects.html" class="menubar">Projects</a></li>
+    <li><a href="interestinglinks.html" class="menubar">Interesting Links</a></li>
+    <li><a href="aboutme.html" class="menubar">About Me</a></li>
+    <li><a href="contact.html" class="menubar">Contact</a></li>
+  </ul>
   </section>
-</main>
+   <div class="line_break"></div>
+
+<h1 id="Heading">Git and GitHub</h1>
+<h3 id="Date">June 13, 2015</h3>
+
+<section id="blogs">
+<p>Version control is a system that allows a team to track, modify, and share different versions of a project. Individuals can make changes to their work that will be monitored. Team members can constantly obtain the newest revision by requesting a pull. Different members of a team can make revisions to the same project at the same time without affecting each other. When the revisions are completed, they can merge their changes back to the central project. Git is a distrubuted version control system. This means every team member has their own repository which they can change without connecting to the server every time. All revisions can be pushed into the main repository.</p>
+<p>Git has a sophisticated system of keeping track of changes. The "git status" command will allow you to obtain information about the current state of your files. It will designate files as untracked if they were not present in the last commit. The "git add" command will track a file, and it will be staged to be committed. If you make changes to a file that was tracked at one point, then git will send out a message saying the file has been tracked but it is not staged to be committed. Again, the "git add" command will allow it to be staged. You can commit the files using the "git commit" command. Every file that has been committed or is staged to be committed will have a unique SHA-1 hash, which is essentially a 40 hex character "stamp". This allows Git to keep track of all the changes that have ever been made to a specific file.</p>
+<p>GitHub has a number of unique features. The social network aspect of the website allows users to follow one another and learn more about other user's contributions. The GitHub fork, pull request, and merge features allow users to easily and efficiently make changes to different open-source projects. This free platform makes it easy for novice programmers to learn and grow. In addition, users can easily store all of their code in one location.</p>
+
+</section>
 
 
+
+  </body>
+</html>
