@@ -17,8 +17,7 @@
 
 #menu ul {
   height: auto;
-  padding: 20px 8px 8px 8px;
-  margin: 2px;
+  padding: 5px 8px 8px 8px;
 }
 #menu li {
   display: inline;
@@ -66,39 +65,40 @@ a:hover
      }
 
 #Heading{
-	margin-top:175px;
+  margin-top:175px;
    margin-bottom:5px;
-	font-family:Palatino Linotype;
-	font-size:50px;
-	text-align:center;
-	color:#558C89;
+  font-family:Palatino Linotype;
+  font-size:50px;
+  text-align:center;
+  color:#558C89;
 
 }
 
 #Date{
-	font-family:Palatino Linotype;
-	font-size:25px;
-	font-style:italic;
-	text-align:center;
-	color:#000000;
+  font-family:Palatino Linotype;
+  font-size:25px;
+  font-style:italic;
+  text-align:center;
+  color:#000000;
 
 }
 
 #HeadingIndexPage{
-	margin-top:300px;
+  margin-top:300px;
    margin-bottom:5px;
-	font-family:Palatino Linotype;
-	font-size:50px;
-	text-align:center;
-	color:#558C89;
+  font-family:Palatino Linotype;
+  font-size:50px;
+  text-align:center;
+  color:#558C89;
 
 }
 
 p {
-	font-family:Trebuchet MS;
-	font-size:20px;
-	text-align:center;
-	}
+  font-family:Trebuchet MS;
+  font-size:20px;
+  text-align:center;
+  line-height: 150%;
+  }
 
 body {
     background-image: url('Logo.png');
@@ -115,9 +115,9 @@ body {
 }
 
 #blogs{
-	padding-right:50px;
-	padding-left:50px;
-	border-style: solid;
+  padding-right:50px;
+  padding-left:50px;
+  border-style: solid;
   border-color:#000000;
   position: relative;
   width:70%;
@@ -140,7 +140,61 @@ A.menubar {color:#FFFFFF;
 A.menubar:hover {color: #74AFAD;
 }
 
-.date{
-font-size:16px
+
+#thinking_style{
+  border-style: solid;
+  border-color:#74AFAD;
+  border-radius:60px;
+  border-width: 15px;
+  color:#000000;
+  position: relative;
+  width:40%;
+  left:22%;
+  text-align:left;
+  padding-top: 15px;
+  padding-left:150px;
+  padding-right: 20px;
+  top: 32%;
+  font-size: 20px;
+  list-style-position:inside;
+  background-color:#FFFFFF;
+  font-family:Palatino Linotype;
+  }
+
+  #title{
+    text-align:center;
+    font-size: 25px;
+    position:relative;
+    right:60px;
+  }
+
+  #quote {
+  background: #558C89;
+  border-left: 20px solid #C0C0C0;
+  margin: 1em 5px;
+  padding: 0.1em 0.1px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: center;
+  font-size:30px;
+  color:#FFFFFF;
+}
+blockquote:before {
+  color: #C0C0C0;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.10em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #C0C0C0;
+  content: close-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.10em;
+  vertical-align: -0.4em;
 }
 
+h5{
+  margin:0;
+}
