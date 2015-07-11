@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Priyanka's Website</title>
+    <link href="blogposts.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+ <section id="menu">
+  <ul>
+    <li><a href="index.html" class="menubar">Home</a></li>
+    <li><a href="blogposts.html" class="menubar">Blog Posts</a></li>
+    <li><a href="projects.html" class="menubar">Projects</a></li>
+    <li><a href="interestinglinks.html" class="menubar">Interesting Links</a></li>
+    <li><a href="aboutme.html" class="menubar">About Me</a></li>
+    <li><a href="contact.html" class="menubar">Contact</a></li>
+  </ul>
+  </section>
+   <div class="line_break"></div>
+
+<h1 id="Heading">Enumerable Method</h1>
+<h3 id="Date">July 10, 2015</h3>
+
+<section id="blogs">
+  <section id="quote"><span style="font-size:50px">Ruby</span>
+    <p><span style="font-size:25px"><i>A Programmer's Best Friend</i></span></p>
+    <p><img src="Ruby.png"style="width:100px;height:85px";></p>
+  </section>
+
+<p>Collecting and processing data is important in Ruby. The <i>map</i> method is an extremely powerful method in Ruby. To fully understand how the <i>map</i> method works, it helps to know a little bit about classes and modules. </p>
+
+
+<h5>Class</h5>
+ <p>
+Ruby is a class-based object oriented programming language. A class is essentially the original template from which individual objects are created. It allows you to group together methods so that objects can act in similar ways. Every object is an instance of a class. Classes are also objects which belong to the <i>Class</i> class.</p>
+
+
+<h5>Module</h5>
+<p>
+Modules group together classes, methods, and constants.They do not have instances, and the properties of a module can be added to a class or object. When a module is mixed into a class, it is often referred to as a "mix-in". The instance methods defined in the module can be retrieved by the instances of the class.
+</p>
+
+<p>
+<h5>Enumerable Module</h5>
+<p>
+If a class wants to use the Enumerable module, it must define the <i>each</i> method. The Enumerable module will give all the objects of the class the properties described by <i>each</i>. To view all the methods in the Enumerable method you can simply type <i>Enumerable.instance_methods.sort</i> into the terminal. You will see the following:
+<p><img src="Enumerable.png"></p>
+</p>
+
+
+<h5>Enumerable#map Method</h5>
+<p>The <i>map</i> method will go through an array, one element at a time. The element gets processed through the code block, and a new array is returned. In contrast, the <i>each</i> method returns the original object, its receiver.
+
+<p>Let's start out with an array called <i>numbers</i>. First we perform the <i>map</i> method, and then the <i>each</i> method on this array.</p>
+<p><img src="nums.png"></p>
+
+
+ <p> The results show that the numbers in the array are cycled through, and each number is multiplied by 4. With the <i>map</i> method, we get the creation of a brand new array that contains the results of each number multiplied by 4. On the other hand, with the <i>each</i> method, we simply get back the original array. </p>
+<p><img src="mapandeach.png"></p>
+
+<p> In another example, we have an array called <i>names</i> which contains four names in all capital letters. The <i>map</i> and <i>map!</i> methods are both applied to the array. Each string in the array becomes lowercase. While the results produce what appears to be the same output, the <i>map!</i> method is called a destructive method. This means it will permanently change the existing array. The <i>map</i> method is nondestructive. It will make changes to a copy of the original array.
+<p><img src="names.png"></p>
+<p><img src="mapdestructive.png"></p>
+
+  </section>
+
+
+
+
+
+  </body>
+</html>
