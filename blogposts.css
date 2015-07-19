@@ -73,6 +73,15 @@ a:hover
 
 }
 
+.date{
+  font-family:Palatino Linotype;
+  font-size:25px;
+  font-style:italic;
+  text-align:center;
+  color:#000000;
+
+}
+
 #Date{
   font-family:Palatino Linotype;
   font-size:25px;
@@ -95,7 +104,7 @@ a:hover
 p {
   font-family:Trebuchet MS;
   font-size:20px;
-  text-align:center;
+  text-align:justify;
   line-height: 150%;
   }
 
@@ -244,31 +253,6 @@ ul
   text-align: justify;
   }
 
-#section1
-{
-width:40%;
-height:400px;
-float:left;
-margin-bottom: 50px;
-border-radius: 20px;
-  border-style: solid;
-  border-color:#558C89;
-  background-color: #ffffff;
-padding-right: 40px;
-}
-
-#section2
-{
-width:40%;
-height:400px;
-float:right;
-margin-bottom: 50px;
-border-radius: 20px;
-  border-style: solid;
-  border-color:#558C89;
-  background-color: #ffffff;
-  padding-right: 40px;
-}
 
 h5 {
   clear: both;
@@ -277,4 +261,9 @@ h5 {
 img{
   border-style: solid;
   border-color:#558C89;
+  text-align: center;
+}
+
+#smallquote{
+  text-align: center;
 }
