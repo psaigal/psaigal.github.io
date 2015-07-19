@@ -24,8 +24,8 @@
 
 <section id="blogs">
   <section id="quote"><span style="font-size:50px">Ruby</span>
-    <p><span style="font-size:25px"><i>A Programmer's Best Friend</i></span></p>
-    <p><img src="Ruby.png"style="width:100px;height:85px";></p>
+    <p id="smallquote"><span style="font-size:25px"><i>A Programmer's Best Friend</i></span></p>
+    <p id="smallquote"><img src="Ruby.png"style="width:100px;height:85px";></p>
   </section>
 
 <p>Collecting and processing data is important in Ruby. The <i>map</i> method is an extremely powerful method in Ruby. To fully understand how the <i>map</i> method works, it helps to know a little bit about classes and modules. </p>
@@ -44,24 +44,24 @@ Modules group together classes, methods, and constants.They do not have instance
 <p>
 <h5>Enumerable Module</h5>
 <p>
-If a class wants to use the Enumerable module, it must define the <i>each</i> method. The Enumerable module will give all the objects of the class the properties described by <i>each</i>. To view all the methods in the Enumerable method you can simply type <i>Enumerable.instance_methods.sort</i> into the terminal. You will see the following:
-<p><img src="Enumerable.png"></p>
-</p>
+If a class wants to use the Enumerable module, it must define the <i>each</i> method. The Enumerable module will give all the objects of the class the properties described by <i>each</i>. To view all the methods in the Enumerable method you can simply type <i>Enumerable.instance_methods.sort</i> into the terminal. You will see the following:</p>
+<img src="Enumerable.png">
+
 
 
 <h5>Enumerable#map Method</h5>
-<p>The <i>map</i> method will go through an array, one element at a time. The element gets processed through the code block, and a new array is returned. In contrast, the <i>each</i> method returns the original object, its receiver.
+<p>The <i>map</i> method will go through an array, one element at a time. The element gets processed through the code block, and a new array is returned. In contrast, the <i>each</i> method returns the original object, its receiver.</p>
 
 <p>Let's start out with an array called <i>numbers</i>. First we perform the <i>map</i> method, and then the <i>each</i> method on this array.</p>
-<p><img src="nums.png"></p>
+<img src="nums.png">
 
 
  <p> The results show that the numbers in the array are cycled through, and each number is multiplied by 4. With the <i>map</i> method, we get the creation of a brand new array that contains the results of each number multiplied by 4. On the other hand, with the <i>each</i> method, we simply get back the original array. </p>
-<p><img src="mapandeach.png"></p>
+<img src="mapandeach.png">
 
-<p> In another example, we have an array called <i>names</i> which contains four names in all capital letters. The <i>map</i> and <i>map!</i> methods are both applied to the array. Each string in the array becomes lowercase. While the results produce what appears to be the same output, the <i>map!</i> method is called a destructive method. This means it will permanently change the existing array. The <i>map</i> method is nondestructive. It will make changes to a copy of the original array.
-<p><img src="names.png"></p>
-<p><img src="mapdestructive.png"></p>
+<p> In another example, we have an array called <i>names</i> which contains four names in all capital letters. The <i>map</i> and <i>map!</i> methods are both applied to the array. Each string in the array becomes lowercase. While the results produce what appears to be the same output, the <i>map!</i> method is called a destructive method. This means it will permanently change the existing array. The <i>map</i> method is nondestructive. It will make changes to a copy of the original array.</p>
+<img src="names.png">
+<img src="mapdestructive.png">
 
   </section>
 
