@@ -263,6 +263,7 @@ img{
   border-style: solid;
   border-color:#558C89;
   text-align: center;
+  position: relative;
 }
 
 #smallquote{

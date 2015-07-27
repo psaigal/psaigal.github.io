@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Priyanka's Website</title>
+    <link href="blogposts.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+ <section id="menu">
+  <ul>
+    <li><a href="index.html" class="menubar">Home</a></li>
+    <li><a href="blogposts.html" class="menubar">Blog Posts</a></li>
+    <li><a href="projects.html" class="menubar">Projects</a></li>
+    <li><a href="resume.html" class="menubar">Resume</a></li>
+    <li><a href="aboutme.html" class="menubar">About Me</a></li>
+    <li><a href="contact.html" class="menubar">Contact</a></li>
+  </ul>
+  </section>
+   <div class="line_break"></div>
+
+<h1 id="Heading">Inheritance</h1>
+<h3 id="Date">July 26, 2015</h3>
+
+
+<section id="blogs">
+  <section id="quote"><blockquote>How did Ruby get so rich? </blockquote><p id="smallquote"><i>Inheritance</i></section>
+  </p>
+  <h5>Inheritance</h5>
+  <p>Inheritance is an important concept in object-oriented programming languages. It allows subclasses to inherit methods from a super class. This eliminates the need to copy and paste the exact same methods in every class. The inheritance relationship is described as a <i>is-a</i> relationship. For example, a high heel <i>is a</i> shoe.</p>
+
+<p>In the example below, you see four different classes: Sandals, HighHeels, Boots, and RunningShoes.</p>
+<img src="sandals.png">
+<img src="highheels.png">
+<img src="boots.png">
+<img src="runningshoes.png">
+
+<p>All of these classes are shoes which have common methods and variables that can be moved to the <i>Shoe</i> class.</p>
+
+<img src="shoe.png">
+
+<p>Shoe becomes the superclass and the Boots, HighHeels, RunningShoes, and Sandals are the subclasses. These subclasses will inherit the attribute accessor methods that create the instance variables in the classes. They will not inherit the actual instance variables.</p>
+
+<p> In the example below, the subclass Boots inherits from superclass Shoe using the <i><</i> symbol.</p>
+<img src="bootsinheritance.png">
+
+ <p>The subclasses can still define their own methods (which are not inherited). For example, if we want to determine whether or not a boot has a high heel, the RunningShoes and Sandals classes should not be affected. Instead, we can specifically define a method in the Boots class.</p>
+
+<p>Subclasses can create their own methods that override the methods they inherit from their superclass. If you want to change the function of a method inherited from a superclass, you can change the method within the subclass. If no superclass is defined for a class, then the class Object automatically becomes the superclass.</p>
+
+<h5>Composition</h5>
+<p>Composition involves the concept that the parts make up the whole. An objects has parts, and this is described as a <i>has-a</i> relationship. For example, if we wanted to break up the Shoe class into parts, we might look at the instance variables. Shoe <i>has a</i> sole for example.</p>
+
+<p>The class Boot has its own parts. For example, a boot has a zipper. As a result, a new class called Zipper can be created.</p>
+
+<img src="zipper.png">
+
+<p>The Zipper class will be initialized with a color, length, and material. The Boots class is now updated. In its initialize method, it takes a zipper and a calf length.</p>
+
+<img src="boots2.png">
+
+<p>A new instance of the class Zipper is created. The new obect zigzag_zip is passed as the argument for the leather_boots object, which is a new instance of the Boots class.</p>
+
+<img src="zigzag.png">
+<p>A new instance of the class Zipper is created. The new obect zigzag_zip is passed as the argument for the leather_boots object, which is a new instance of the Boots class.</p>
+
+  </section>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

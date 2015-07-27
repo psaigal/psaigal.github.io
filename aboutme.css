@@ -150,3 +150,7 @@ h5{
   font-family:Palatino Linotype;
 
 }
+
+body {
+    max-width: 950px;
+}
