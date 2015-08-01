@@ -1,0 +1,186 @@
+#title{
+position: absolute;
+left:15%;
+top:10%;
+}
+
+#instructionsclick{
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  top:33%;
+  padding-left: 200px;
+  padding-right: 200px;
+   font-family:Book Antiqua;
+   color:#D2691E;
+   font-style: italic;
+
+}
+
+#button_details{
+  font-family:Verdana;
+  font-size:20px;
+  color: white;
+  background-color: #D2691E;
+  border: 2pt;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-color:#000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+
+
+#buttons{
+  position: fixed;
+  left:5%;
+  top:55%;
+}
+
+
+body {
+background-image: url("treasuremap.png");
+background-repeat: no-repeat;
+background-size: 30% auto;
+background-attachment:fixed;
+background-position: right bottom;
+background-color:#F5F5DC
+}
+
+#countdown{
+  position: absolute;
+  right: 5%;
+  font-family:Verdana;
+  font-size:35px;
+  color: #CC0000;
+  background-color: #FFCC00;
+  border: 2pt;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-color:#000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius:10px;
+}
+
+#winner{
+  position: absolute;
+  top:1px;
+  left:25%;
+  z-index:1;
+  position: absolute;
+
+}
+
+#gameover{
+  position: absolute;
+  bottom:10%;
+  left:15%;
+  z-index:1;
+  position: absolute;
+
+}
+
+
+#instructions{
+  font-family:Verdana;
+  font-size:25px;
+  color: white;
+  background-color: #D2691E;
+  border: 2pt;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-color:#000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius:10px;
+}
+
+#treasureimage{
+  position: absolute;
+  bottom:3%;
+  left:-3%;
+  z-index:-1;
+
+}
+
+
+#replay{
+  font-family:Verdana;
+  font-size:15px;
+  color: white;
+  background-color: #FFCC00;
+  border: 2pt;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-color:#000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius:10px;
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+}
+
+a:link {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    text-decoration: none;
+     color:black;
+}
+
+a:hover {
+    text-decoration: none;
+     color:black;
+}
+
+a:active {
+    text-decoration: none;
+     color:black;
+}
+
+#website{
+  font-family:Verdana;
+  font-size:15px;
+  background-color: #FFFFFF;
+  border: 2pt;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-color:#000000;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius:10px;
+  position: absolute;
+  bottom: 0%;
+  left:40%
+}
