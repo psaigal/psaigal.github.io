@@ -29,7 +29,7 @@ var buttonClicked = function(choice){
     var specialNumber = randomNumber.luckyNumber;
     if (choice == specialNumber){
         alert(winLose.win);
-        return document.getElementById("winner").innerHTML = ("<img src='winner.png'/>");
+        return document.getElementById("winner").innerHTML = ("<img src='Winner.png'/>");
     }
     else {
         Guesses.guessCount-=1;
@@ -57,11 +57,5 @@ var score = document.getElementById("countdown").innerHTML = ("Guesses Left: " +
 
 
 
-
-
-
-
-// // 2 objects with properties
-// // 2 functions that interact with those objects by adding or modifying the object's properties
 
 
