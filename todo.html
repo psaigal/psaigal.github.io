@@ -1,0 +1,33 @@
+<html>
+    <head>
+     <style type="text/css">
+body {
+background-image: url(penandpaper.jpg);
+background-repeat: no-repeat;
+background-size: 60% auto;;
+background-attachment:fixed;
+background-position: right;
+}
+</style>
+
+        <script src="todo.js"></script>
+
+
+    </head>
+
+    <body>
+
+
+    <h1 style="color:red;font-family:Book Antiqua;font-size:70px;text-align:left">To Do List</h1>
+    <p style="font-family:Book Antiqua;text-align:left;font-size:35px"><i>Enter Your Items Below</i></p>
+
+        <form name="ToDoList">
+            <input type="text" id="ToDo">
+            <input type="button" style="font-family:Book Antiqua; font-size:20px; color: red; background-color: #FFFFFF; border: 1pt ridge #000000" value="Add to List" onclick="processForm()">
+        </form>
+
+        <h3 id="List"></h3>
+
+    </body>
+
+</html>
