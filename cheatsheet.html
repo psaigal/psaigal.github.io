@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cheat Sheet</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="cheatsheet.css">
+  </head>
+    <header>
+      <h1>Ruby and JavaScript Loop Comparison</h1>
+    </header>
+    <body>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th class='column_width'>Ruby</th>
+            <th class='column_width'>JavaScript</th>
+          </tr>
+        </thead>
+          <tr>
+            <th>for...in</th>
+            <td>
+              <pre><code>
+  number_list = [1, 2, 3, 4]
+  for number in number_list
+    puts number
+  end
+              </code></pre>
+              <pre class="output"><code>
+  >1
+  >2
+  >3
+  >4
+              </code></pre>
+              <code>for...in</code> in Ruby iterates through each item in an Array. In a hash <code>for...in</code> iterates through each key an value individually.
+            </td>
+            <td>
+              <pre><code>
+  var number_list = [1, 2, 3, 4];
+  for (index in number_list)
+    console.log(number_list[index]);
+              </code></pre>
+              <pre class="output"><code>
+  >1
+  >2
+  >3
+  >4
+              </code></pre>
+              JavaScript's <code>for...in</code> iterates through an array by its index, whereas Ruby's <code>for...in</code> or <code>each</code> method iterates through each item in the array/object directly. <code>for...in</code> in JavaScript iterates through an object by each property.
+            </td>
+          </tr>
+          <tr>
+            <th>while</th>
+            <td><pre><code>
+  number = 12
+  while number<16
+    puts "Your number is too small"
+    number+=1
+  end
+              </code></pre>
+                <pre class="output"><code>
+  >"Your number is too small"
+  >"Your number is too small"
+  >"Your number is too small"
+  >"Your number is too small"
+              </code></pre>
+              <code>while</code> creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
+            </td>
+            <td><pre><code>
+  var number = 12;
+  while (number<16){
+    console.log("Your number is too small");
+  number++
+  }
+
+              </code></pre>
+                <pre class="output"><code>
+  >"Your number is too small"
+  >"Your number is too small"
+  >"Your number is too small"
+  >"Your number is too small"
+              </code></pre>
+              <code>while</code> creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
+            </td>
+          </tr>
+          <tr>
+            <th>do</th>
+            <td>
+              <pre><code>
+  number = 0
+  loop do
+    p "endless loop until you break"
+    number+=1
+  break if number == 5
+  end
+
+              </code></pre>
+              <pre class="output"><code>
+  >"endless loop until you break"
+  >"endless loop until you break"
+  >"endless loop until you break"
+  >"endless loop until you break"
+  >"endless loop until you break"
+              </code></pre>
+                The <code>loop do</code> function in Ruby creates an endless loop, unless ended with a <code>break</code> statement.
+            </td>
+            <td>
+                <pre><code>
+  var brownies = 5;
+  do {
+     brownies -= 1;
+     console.log("Hurry before they run out!");
+  } while (brownies > 1);
+              </code></pre>
+              <pre class="output"><code>
+  >"Hurry before they run out!"
+  >"Hurry before they run out!"
+  >"Hurry before they run out!"
+  >"Hurry before they run out!"
+              </code></pre>
+                <code>do...while</code> in JavaScript creates a loop that executes a specified statement until the test condition evaluates to false. It is similiar to a <code>while</code> loop except that the condition is evaluated after executing the statement, so that the specified statement is exectued at least once.
+           </td>
+          </tr>
+          <tr>
+            <th>until</th>
+            <td><pre><code>
+  money = 0
+  until money==4 do
+      puts("You are getting richer!")
+      money+=1
+  end
+              </code></pre>
+              <pre class="output"><code>
+  >"You are getting richer!"
+  >"You are getting richer!"
+  >"You are getting richer!"
+  >"You are getting richer!"
+              </code></pre>
+              <code>until</code> creates a loop that executes a specified statement until the test condition evaluates to true.
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>each</th>
+            <td>
+            <pre><code>
+  tv_shows = ["Friends","The Office", "Seinfeld"]
+  tv_shows.each do |show|
+    puts show
+  end
+           </code></pre>
+           <pre class="output"><code>
+   >"Friends"
+   >"The Office"
+   >"Seinfeld"
+            </code></pre>
+            <code>each</code> loop goes through each item in a list (like an array or hash) and executes the code inside the block
+            </td>
+
+            <td><pre><code>
+
+  var each = function(array, iterate) {
+    for (var i=0; i < array.length; i++) {
+      iterate(array[i]);
+    }
+  };
+
+  var desserts = ["ice cream", "brownies", "cookies"];
+
+  each(desserts, function(element) { console.log("I want " + element + "!"); });
+            </code></pre>
+                <pre class="output"><code>
+  >I want ice cream!
+  >I want brownies!
+  >I want cookies!
+
+           </code></pre>
+<code>each</code> function takes an array and goes through each element in the array using a nested function
+               </td>
+          </tr>
+          <tr>
+            <th>for</th>
+            <td></td>
+            <td>
+            <pre><code>
+  var holiday_destinations = ["Italy", "Myanmar", "Iran", "Japan"]
+  for (var i=0; i < holiday_destinations.length; i++)
+    console.log(holiday_destinations[i]);
+           </code></pre>
+           <pre class="output"><code>
+  >Italy
+  >Myanmar
+  >Iran
+  >Japan
+            </code></pre>
+            <code>for</code> loop initializes a variable, sets a condition which will evaluate to true or false, and then incremenets the variable each time the loop has been executed
+            </td>
+          </tr>
+      </table>
+  </body>
+</html>

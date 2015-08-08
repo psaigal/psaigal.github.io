@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    font-family: Book Antiqua;
+}
+
+pre {
+    color: red;
+}
+
+.output{
+    color:blue;
+    margin-top: -2.5em;
+}
+
+
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 80%;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+th{
+    font-size:20px;
+}
+
+.column_width {
+  min-width: 550px;
+}
