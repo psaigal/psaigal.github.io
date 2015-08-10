@@ -269,3 +269,26 @@ img{
 #smallquote{
   text-align: center;
 }
+
+pre{
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  text-align: justify;
+  background-color: #d3d3d3;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-bottom:0px;
+  color:#00008b;
+  line-height: 150%;
+  border-style: solid;
+  border-color:#D9853B;
+  /*width:90%;*/
+
+}
+
+.answer{
+  color:#990033;
+
+}
+
+

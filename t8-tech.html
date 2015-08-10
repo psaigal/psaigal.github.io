@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Priyanka's Website</title>
+    <link href="blogposts.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+ <section id="menu">
+  <ul>
+    <li><a href="index.html" class="menubar">Home</a></li>
+    <li><a href="blogposts.html" class="menubar">Blog Posts</a></li>
+    <li><a href="projects.html" class="menubar">Projects</a></li>
+    <li><a href="resume.html" class="menubar">Resume</a></li>
+    <li><a href="aboutme.html" class="menubar">About Me</a></li>
+    <li><a href="contact.html" class="menubar">Contact</a></li>
+  </ul>
+  </section>
+   <div class="line_break"></div>
+
+<h1 id="Heading">Recursion</h1>
+<h3 id="Date">August 9, 2015</h3>
+
+<section id="blogs">
+
+<section id="quote"><blockquote>
+People often joke that in order to understand recursion, you must first understand recursion.</blockquote><p id="smallquote"><i>John D. Cook</i></p>
+  </section>
+<hr>
+<p>Recursion is a concept used in all programming languages. It is defined as a function calling on itself. Using recursion can allow your code to be more concise, simple, and understandable. </p>
+<img src="recursion.jpg" height="320" width="400"/>
+
+<h5>Simple Example</h5>
+<p>Let's start off by looking at a simple example that does not use recursion. The example below shows the function <i>cookieJar</i>, which takes a number as its parameter. In the <i>for</i> loop, the variable <i>cookies</i> is initially set to 0, and it is incremented by 1 each time the code block is executed. When the <i>cookies</i> variable is equal to the function's argument, there will be no more cookies left to add to the cookie jar. If the <i>cookies</i> variable is less than the function's number argument, the message "Keep adding more cookies" will be printed to the console.</p>
+
+<pre><code>
+var cookieJar = function(number){
+  for (var cookies = 0; cookies<=number; cookies++){
+    if (cookies==number){
+    return console.log("There are no more cookies to add!");
+    }
+    console.log("Keep adding more cookies!");
+  }
+}
+<section class="answer">
+cookieJar(5)
+=>  Keep adding more cookies!
+    Keep adding more cookies!
+    Keep adding more cookies!
+    Keep adding more cookies!
+    Keep adding more cookies!
+    There are no more cookies to add!
+  </section>
+</code>
+</pre>
+
+
+<h5>Recursion Example</h5>
+<p>Below, you will see the same example utilizing recursion. The first <i>if</i> statement is the base case. When this line of code is executed, it will stop the recursion. Without this statement, the recursion will never stop, leading your computer to crash! Moving to the <i>else</i> statement, you will see that if the <i>number</i> argument is greater than 0, the message "Keep adding cookies!" will print to the console. This is known as the recursive case. Each time the code block is executed, the variable <i>countDown</i> is equal to the <i>number</i>-1. After that line, we see the function calling itself. This continues until the base case. There are no for or while loops used unlike the previous example.</p>
+<pre><code>
+var cookieJar = function(number){
+    if (number==0) {
+    return console.log("There are no more cookies to add!");
+    }
+    else {
+    console.log("Keep adding more cookies!");
+    var countDown = number-1;
+    cookieJar(countDown);
+    }
+}
+
+<section class="answer">
+cookieJar(5)
+=>  Keep adding more cookies!
+    Keep adding more cookies!
+    Keep adding more cookies!
+    Keep adding more cookies!
+    Keep adding more cookies!
+    There are no more cookies to add!
+</section>
+</code>
+</pre>
+<h5>When To Use Recursion</h5>
+<p>The memory set aside each time a function is called is known as a frame. In a recursive example, many functions are being called, and their frames are stored into a call stack, which is a LIFO data-type (Last In First Out). Since recursive functions can get really complex and deep, they often require a great deal of memory and can cause a program to run slow. For that reason, it is important to use recursion only when it is truly necessary.</p>
+
+  </section>
+
+  </body>
+</html>
