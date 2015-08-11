@@ -1,7 +1,8 @@
 #menu {
-  width: 920px;
-  height: 70px;
-  font-size: 20px;
+  max-width:80%;
+  width: auto;
+  height: auto;
+  font-size: 18px;
   font-family: Trebuchet MS;
   font-weight: bold;
   background-color: #558C89;
@@ -11,45 +12,30 @@
   text-align:center;
   position: absolute;
   right: 1%;
-  top: 5%;
+  top: 3%;
 }
 
 
 #menu ul {
   height: auto;
-  padding: 5px 8px 8px 8px;
+  padding: 10px;
+
 }
 #menu li {
   display: inline;
-  padding: 25px;
-}
-
-#icons {
- width: 600px;
-  height: 70px;
-  font-size: 20px;
-  font-family: Trebuchet MS;
-  font-weight: bold;
-  background-color: #558C89;
-  border-radius: 10px;
-  border-style: solid;
-  border-color:#000000;
-  text-align:center;
-  position: absolute;
-  bottom: 30%;
-  left:28%;
+  padding: 18px;
 }
 
 
-#icons ul {
-  height: auto;
-  padding: 12px 8px 8px 8px;
-  margin: 2px;
-}
-#icons li {
-  display: inline;
-  padding: 25px;
-}
+body {
+    background-image: url('Logo.png');
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-size:30%;
+    z-index:10;
+    }
+
+
 
 a {
     color: #558C89;
@@ -108,11 +94,6 @@ p {
   line-height: 150%;
   }
 
-body {
-    background-image: url('Logo.png');
-    background-repeat: no-repeat;
-    background-attachment: absolute;
-    }
 
 .line_break{
   height:4px;
